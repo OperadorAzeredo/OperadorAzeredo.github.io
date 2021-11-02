@@ -1,0 +1,521 @@
+
+body
+{
+    background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    position: relative;
+   display: grid;
+   grid-template-columns: 60vh 60vh 60vh;
+   grid-template-rows: 30vh 110vh 10vh;
+   grid-gap: 20px 35px;
+   grid-template-areas: "h h h"
+                        "al m ar"
+                        "f f f";
+    justify-content: center;
+    align-content: center;
+    margin-top: -10px;
+    /* z-index: 2; */
+}
+
+#inicio 
+{
+    background-color: rgba(255, 255, 255, 0.473);
+    grid-area: h;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#logo
+{
+    float: left;
+    border: 7px white solid;
+    border-radius: 10px;
+    margin: 5px 0 -6px 90px;
+    padding: 0 0 0 -30px;
+}
+#inicio img
+{
+    margin: 0 0 -6px 0;
+}
+#menu
+{
+    float:right;
+    position: relative;
+    height: 100%;
+    width: 560px;
+    
+}
+
+#topmenu ul
+{
+    display: inline-block;
+    list-style-type: none;
+    width: 630px;
+    height: 30px;
+    padding: 0;
+    margin-left: -78px;
+}
+#topmenu ul li
+{
+    display: inline-block;
+    margin: 10px;
+    border-right: medium white solid;
+    border-left: medium white solid;
+    
+}
+#topmenu a
+{
+    text-decoration: none;
+    text-shadow: 2px 2px 8px gray;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    
+}
+#topmenu a:hover
+{
+    text-decoration:underline;
+    
+}
+#a3
+{
+    color: white;
+    background-color: black;
+    
+}
+
+.busca
+{
+    height: 41,2px;
+    position: absolute;
+    right: 0;
+    width: 350px;
+}
+.find_school
+{
+    box-shadow: 2px 2px gray;
+    text-shadow: 2px 2px 8px gray;
+}
+.busca a
+{
+    position: absolute;
+    right: 50px;
+}
+#botmenu
+{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 900px; 
+}
+#botmenu ul
+{
+    list-style-type: none;
+    
+}
+#botmenu ul li
+{
+    display: inline-block;
+    margin: 10px;
+    background-color: lightgray;
+    border: medium white solid;
+    border-radius: 50px;
+}
+#botmenu a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 46px 10px 46px;    
+    color: black;
+    
+}
+#botmenu a:hover, #botmenu li:hover
+{
+    border-radius: 5px;
+    background-color: lightgreen;
+    color: white;
+    text-shadow: 2px 2px 8px gray;
+}
+#botmenu a:active, #sidebar-menu a:active
+{
+    color: darkred;
+}
+
+aside#left
+{
+    
+    grid-area: al;
+    width: 80%;
+    background-color: rgba(168, 217, 230, 0.247);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "asdl1"
+                         "asdl2";
+                         
+}
+#asdl1
+{
+    grid-area: asdl1;
+}
+#most-popular
+{
+    grid-area: asdl2;
+}
+#left img
+{
+    border: 5px white solid;
+    border-radius: 15px;
+}
+#sidebar-menu
+{
+    list-style-type: none;
+}
+#sidebar-menu li
+{
+    border: white 1px solid;
+    margin: 10px 0 10px -40px;
+    background-color: lightgrey;
+    border-radius: 50px;
+    
+}
+#sidebar-menu a:hover, #sidebar-menu li:hover
+{
+    background-color: lightgreen;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 8px gray;
+}
+#botmenu a:active, #sidebar-menu a:active
+{
+    color: darkred;
+}
+#sidebar-menu a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 9px 0 8px 0;
+}
+#sidebar-menu2
+{
+    list-style-type:'>  ';
+    border: medium white solid;
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+#sidebar-menu2 a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+#sidebar-menu2 li
+{
+    margin: 10px 0 10px 0;
+}
+#sidebar-menu2 li:hover, #sidebar-menu2 a:hover
+{
+    color: white;
+    text-shadow: 2px 2px 8px gray;
+}
+#left h2
+{
+    color: white;
+    text-shadow: 5px 3px 4px black;
+    text-align: center;
+}
+main
+{
+    
+    grid-area: m;
+    width: 467px;
+    margin-left: -100px;
+    padding-right: 160px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "art1"
+                         "art2"
+                         "art3";
+                         grid-gap: 5px;
+}
+
+article header
+{
+    text-shadow: 5px 3px 10px black;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    width: 95%;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.719), transparent); 
+}
+article header a
+{
+    color: black;
+}
+article header a:hover
+{
+    color: lightgreen;
+}
+#figasideleft
+{
+    float: left;
+}
+article header h1
+{
+    display: inline;
+}
+article header a
+{
+    float: right;
+}
+article ol, article ul
+{
+    list-style: none;
+}
+#date-list
+{
+    clear: both;
+}
+#whatsnew
+{
+    grid-area: art1;
+}
+#whatsnew ol, #date-list2 ol
+{
+    float:left;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: rgb(94, 92, 92);
+    
+}
+#date-list ul a, #date-list2 ul a
+{
+    color: black;
+}
+#date-list ul a:hover, #date-list2 ul a:hover
+{
+    color: lightgreen;
+    text-shadow: 2px 2px 8px gray;
+}
+
+article
+{
+    width: 134%;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: rgba(168, 217, 230, 0.432);
+}
+#newsticker
+{
+    grid-area: art2;
+}
+#newsticker header a
+{
+    background-color: green;
+    display: block;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    border: medium black solid;
+    border-radius: 5px;
+}
+#newsticker aside
+{
+    float: right;
+    display: block;
+    width: 25px;
+    height: 60px;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+#newsticker aside a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+    background-color: green;
+    border: medium black solid;
+    border-radius: 5px;
+}
+#newsticker aside a:hover, #newsticker header a:hover
+{
+    background-color: lightgreen;
+    color: black;
+}
+#newsticker p
+{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+#calendar
+{
+    grid-area: art3;
+}
+
+aside#right
+{
+    background-color: rgba(168, 217, 230, 0.247);
+    border-radius: 20px;
+    grid-area: ar;
+    width: 80%;
+    margin-left: 85px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 2fr 2fr;
+    grid-template-areas: "spot1"
+                         "."
+                         "spot2"
+                         "."
+                         "spot3"
+                        "."
+                        ".";
+}
+#main-spotlight
+{
+    grid-area: spot1;
+    position: relative;
+
+}
+#small-spotlight1
+{
+    grid-area: spot2;
+}
+#small-spotlight2
+{
+    grid-area: spot3;
+}
+#main-spotlight-text
+{
+	position: absolute;
+	bottom: 40%;
+	right: 23%;
+	background-color: rgba(207, 165, 165, 0.75);
+	text-align: center;
+	padding: 5px 0px 5px 2px;
+    width: 180px;
+	border: solid 2px black;
+}
+.small-spotlight
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 310px;
+    height: 110px;
+	background-color: lightgray;
+    border: solid 2px white;
+    border-radius: 15px;
+	margin-left: 12px;
+}
+.small-spotlight figure
+{
+	margin: 5px 5px 5px 5px;
+}
+hr
+{
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, white, transparent); 
+}
+#footer-page
+{
+    grid-area: f;
+    background-color: rgba(255, 255, 255, 0.473);
+    margin-bottom: -30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: grid;
+    grid-template-columns: 3fr  1fr  3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: ". fph ."
+                         "fpf fpf fpf";
+    
+    
+    
+                        
+}
+.fprow1
+{
+    grid-area: fph;            
+}
+.fprow2
+{
+    grid-area: fpf;
+}
+#footer-page ul
+{
+    display: inline-block;
+    margin-left: -30px;
+}
+#footer-page a
+{
+    text-decoration: none;
+}
+#footer-page ul li
+{
+    display: inline-block;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    margin: 0 10px;
+}
+#footer-page ul li a
+{
+    margin: 0 10px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    
+}
+#footer-page ul li a:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+#backtop
+{
+    color: white;
+    background-color: green;
+    border: 3px black solid;
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 47%;
+}
+#backtop:hover
+{
+    background-color: lightgreen;
+    color: black;
+}
+#footer-page p
+{
+    color: gray;
+    float: right;
+    margin-right: 40px;
+}
+/* .icont
+{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.329);
+    top: 220px;
+    left: 60px;
+    width: 1360px;
+    height: 790px;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+} */
