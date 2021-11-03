@@ -1,0 +1,25 @@
+@charset"utf-8";
+
+.menu{
+    list-style-type: nome;
+    background-color: lightgray;
+    margin: 0px;
+    padding: 10px;    
+    width: fit-content;
+}
+
+.menu-li{
+    display:grid;
+    
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-image: url(Sprite_g.jpg);
+    margin: 0px;
+    padding: 10px;
+}
