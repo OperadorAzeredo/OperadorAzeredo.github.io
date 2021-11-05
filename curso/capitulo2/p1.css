@@ -1,7 +1,7 @@
 
 body
 {
-    background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
+    background-image: url("multicam.jpg");
     background-attachment: fixed; 
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body
 
 #inicio 
 {
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(0, 0, 0, 0.473);
     grid-area: h;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -33,8 +33,6 @@ body
 #logo
 {
     float: left;
-    border: 7px white solid;
-    border-radius: 10px;
     margin: 5px 0 -6px 90px;
     padding: 0 0 0 -30px;
 }
@@ -121,9 +119,9 @@ body
 {
     display: inline-block;
     margin: 10px;
-    background-color: lightgray;
-    border: medium white solid;
-    border-radius: 50px;
+    background-color: rgb(250, 250, 250);
+    border: medium rgb(0, 0, 0) solid;
+    
 }
 #botmenu a
 {
@@ -136,9 +134,9 @@ body
 #botmenu a:hover, #botmenu li:hover
 {
     border-radius: 5px;
-    background-color: lightgreen;
-    color: white;
-    text-shadow: 2px 2px 8px gray;
+    background-color: rgb(247, 93, 4, 0.973);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 #botmenu a:active, #sidebar-menu a:active
 {
@@ -151,7 +149,6 @@ aside#left
     grid-area: al;
     width: 80%;
     background-color: rgba(168, 217, 230, 0.247);
-    border-radius: 20px;
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "asdl1"
@@ -169,7 +166,7 @@ aside#left
 #left img
 {
     border: 5px white solid;
-    border-radius: 15px;
+    
 }
 #sidebar-menu
 {
@@ -179,16 +176,16 @@ aside#left
 {
     border: white 1px solid;
     margin: 10px 0 10px -40px;
-    background-color: lightgrey;
+    background-color: rgb(0, 128, 0);
     border-radius: 50px;
     
 }
 #sidebar-menu a:hover, #sidebar-menu li:hover
 {
-    background-color: lightgreen;
+    background-color: rgba(0, 0, 0, 0.973);
     color: white;
     border-radius: 5px;
-    text-shadow: 2px 2px 8px gray;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 #botmenu a:active, #sidebar-menu a:active
 {
@@ -197,7 +194,7 @@ aside#left
 #sidebar-menu a
 {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     display: block;
     width: 100%;
     height: 100%;
@@ -208,8 +205,8 @@ aside#left
 {
     list-style-type:'>  ';
     border: medium white solid;
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: rgba(49, 114, 24, 0.973);
+    
     
 }
 #sidebar-menu2 a
@@ -252,11 +249,11 @@ main
 article header
 {
     text-shadow: 5px 3px 10px black;
-    color: white;
+    color: rgba(245, 103, 9, 0.938);
     text-align: left;
     margin-left: 10px;
     width: 95%;
-    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.719), transparent); 
+    background-image: linear-gradient(to right, transparent, rgb(0, 0, 0), transparent); 
 }
 article header a
 {
@@ -264,7 +261,7 @@ article header a
 }
 article header a:hover
 {
-    color: lightgreen;
+    color: rgb(255, 255, 255);
 }
 #figasideleft
 {
@@ -295,7 +292,7 @@ article ol, article ul
     float:left;
     margin-top: 0px;
     margin-right: 10px;
-    color: rgb(94, 92, 92);
+    color: rgb(0, 0, 0);
     
 }
 #date-list ul a, #date-list2 ul a
@@ -312,7 +309,6 @@ article
 {
     width: 134%;
     border: solid 1px white;
-    border-radius: 20px;
     background-color: rgba(168, 217, 230, 0.432);
 }
 #newsticker
@@ -346,13 +342,13 @@ article
     color: white;
     text-decoration: none;
     margin: 5px 0 5px 0;
-    background-color: green;
+    background-color: rgb(0, 128, 0);
     border: medium black solid;
     border-radius: 5px;
 }
 #newsticker aside a:hover, #newsticker header a:hover
 {
-    background-color: lightgreen;
+    background-color: rgb(0, 128, 0);
     color: black;
 }
 #newsticker p
@@ -399,8 +395,8 @@ aside#right
 #main-spotlight-text
 {
 	position: absolute;
-	bottom: 40%;
-	right: 23%;
+	bottom: 20%;
+	right: 28%;
 	background-color: rgba(207, 165, 165, 0.75);
 	text-align: center;
 	padding: 5px 0px 5px 2px;
@@ -415,11 +411,17 @@ aside#right
 	align-items: center;
 	width: 310px;
     height: 110px;
-	background-color: lightgray;
+	background-color: rgb(0, 128, 0);
     border: solid 2px white;
     border-radius: 15px;
 	margin-left: 12px;
+
 }
+.small-spotlight h4
+{
+    color:white;
+}
+
 .small-spotlight figure
 {
 	margin: 5px 5px 5px 5px;
@@ -434,7 +436,7 @@ hr
 #footer-page
 {
     grid-area: f;
-    background-color: rgba(255, 255, 255, 0.473);
+    background-image: url("KSK.PNG");
     margin-bottom: -30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -503,7 +505,7 @@ hr
 }
 #footer-page p
 {
-    color: gray;
+    color: rgb(255, 254, 254);
     float: right;
     margin-right: 40px;
 }
