@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="p2.js" charset="utf-8"></script>
+    <title>Capítulo 3</title>
+</head>
+<body>
+    <h1>Capítulo 3</h1>
+    <h2>Avaliação 2</h2>
+	<form id="formulario">
+        <br><br>
+        <h2>Aluguel de Carro</h2>
+		<label for="nome">Nome:</label><input type="text" name="nome" id="nome"><br>
+		<label for="telefone">Telefone:</label><input type="text" name="telefone" id="telefone"><br>
+		<br>
+        <label for="cidade_retirada">Cidade Retirada:</label><br>
+		<select id="cidade_retirada">
+            <option value="0" selected="selected">Escolha a cidade retirada</option>
+            <option value="1">Campos dos Goytacazes - RJ</option>
+            <option value="2">Rio de Janeiro - RJ</option>
+            <option value="3">Vitória - ES</option>
+        </select>
+        <br>
+        <label for="cidade_entrega">Cidade Entrega:</label><br>
+		<select id="cidade_entrega">
+            <option value="0" selected="selected">Escolha a cidade de entrega</option>
+            <option value="1">Campos dos Goytacazes - RJ</option>
+            <option value="2">Rio de Janeiro - RJ</option>
+            <option value="3">Vitória - ES</option>
+        </select>
+        <br>
+		<label for="data_retirada">Data de retirada:</label><input type="date" name="data_retirada" id="data_retirada"><br>
+		<label for="data_devolucao">Data de devolução</label><input type="date" name="data_devolucao" id="data_devolucao"><br>
+		<br>
+        <label for="tipo-carro">Tipo de Carro:</label><br>
+		<select id="tipo-carro">
+            <option value="0" selected="selected">Escolha o tipo de carro</option>
+            <option value="1">Básico (R$ 119,00)</option>
+            <option value="2">Básico com Ar (R$ 199,00)</option>
+            <option value="3">Executivo (R$ 299,00)</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" id="confirm" value="Confirmar aluguel" onclick="calcularValor()">
+        <br><br>
+
+        
+
+	</form>
+</body>
